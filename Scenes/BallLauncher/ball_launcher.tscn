@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://15xxl5ig6yco"]
+
+[ext_resource type="Script" path="res://Scripts/BallLauncher.gd" id="1_eietq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_541pa"]
+radius = 100.0
+
+[node name="BallLauncher" type="Area2D"]
+position = Vector2(355, 1136)
+script = ExtResource("1_eietq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_541pa")
